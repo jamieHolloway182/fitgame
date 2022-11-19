@@ -20,7 +20,7 @@ class Challenge{
         let y = Math.floor((Math.random() * 10) + 2);
         let challenges = [`Travel ${x}m in ${y} minutes`, `Take ${x} steps in ${y} minutes`];
         
-        this.name = challenges[Math.floor(Math.random() * (challenges.length + 1))];
+        this.name = challenges[Math.floor(Math.random() * (challenges.length))];
         return this.name;
     }
 
