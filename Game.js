@@ -4,7 +4,8 @@ class Game{
     #player;
     #store;
     constructor(){
-        this.challenges = []
+        this.challenges = [];
+        this.player = new Player;
     }
     startGame(){
         
@@ -13,8 +14,15 @@ class Game{
         challenge = new Challenge;
 
         for(let i = 0; i < 4; i++){
-            this.challenges[i] = challenge.generateChallenge()
+            this.challenges[i] = challenge.generateChallenge();
         }
+    }
+    challengeCompleted(){
+        // if challenge is met
+        // increase fuel level
+
+        this.#player.increasePoints();
+        // set challenge to complete
     }
 
 }
