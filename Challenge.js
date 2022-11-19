@@ -15,9 +15,6 @@ class Challenge{
     setIsCompleted(isCompleted){
         this.isCompleted = isCompleted;
     }
-    getPoints(){
-        return this.points;
-    }
     generateChallenge(){
         let x = Math.floor((Math.random() * 100) + 1);
         let y = Math.floor((Math.random() * 10) + 2);
