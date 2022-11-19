@@ -2,6 +2,8 @@ class Car{
     #colour;
     #fuelLevel;
     #speed;
+    #position;
+    #lapNumber;
     constructor(colour, speed){
         this.#fuelLevel = 0;
         this.speed = speed;
@@ -19,5 +21,19 @@ class Car{
     setFuelLevel(fuelLevel){
         this.fuelLevel = fuelLevel;
     }
-
+    getPosition(){
+        return this.position;
+    }
+    setPosition(postion){
+        this.position = position;
+    }
+    getLapNumber(){
+        return this.lapNumber;
+    }
+    setLapNumber(lapNumber){
+        this.lapNumber = lapNumber;
+    }
+    increasePosition(time){
+        position += speed * time;
+    }
 }
