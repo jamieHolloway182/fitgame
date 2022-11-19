@@ -36,4 +36,7 @@ class Car{
     increasePosition(time){
         position += speed * time;
     }
+    increaseSpeed(){
+        speed += 5;
+    }
 }
