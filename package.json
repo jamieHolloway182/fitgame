@@ -1,0 +1,22 @@
+{
+  "name": "fitgame",
+  "version": "1.0.0",
+  "description": "fitgame",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamieHolloway182/fitgame.git"
+  },
+  "author": "jamie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamieHolloway182/fitgame/issues"
+  },
+  "homepage": "https://github.com/jamieHolloway182/fitgame#readme",
+  "dependencies": {
+    "node-fetch": "^3.3.0"
+  }
+}
