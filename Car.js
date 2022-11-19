@@ -4,39 +4,50 @@ class Car{
     #speed;
     #position;
     #lapNumber;
+    #finished;
     constructor(colour, speed){
         this.#fuelLevel = 0;
-        this.speed = speed;
-        this.colour = colour;
+        this.#speed = speed;
+        this.#colour = colour;
+        this.#finished = false;
+    }
+    setFinished(finished){
+        this.#finished = finished;
+    }
+    getFinished(){
+        return this.#finished;
     }
     getColour(){
-        return this.colour;
+        return this.#colour;
     }
     setColour(colour){
-        this.colour = colour;
+        this.#colour = colour;
     }
     getFuelLevel(){
-        return this.fuelLevel;
+        return this.#fuelLevel;
     }
     setFuelLevel(fuelLevel){
-        this.fuelLevel = fuelLevel;
+        this.#fuelLevel = fuelLevel;
     }
     getPosition(){
-        return this.position;
+        return this.#position;
     }
-    setPosition(postion){
-        this.position = position;
-    }
-    getLapNumber(){
-        return this.lapNumber;
-    }
-    setLapNumber(lapNumber){
-        this.lapNumber = lapNumber;
+    setPosition(position){
+        this.#position = position;
     }
     increasePosition(time){
-        position += speed * time;
+        this.#position += this.#speed * time;
+    }
+    getLapNumber(){
+        return this.#lapNumber;
+    }
+    setLapNumber(lapNumber){
+        this.#lapNumber = lapNumber;
+    }
+    increaseLapNumber(){
+        this.#lapNumber++;
     }
     increaseSpeed(){
-        speed += 5;
+        this.#speed += 5;
     }
 }
