@@ -27,7 +27,7 @@ class Race{
             colours[6] = "brown";
             const colourRandomIndex = Math.floor((Math.random()*6));
             const colour = colours [colourRandomIndex];
-            car = newCar(speed,colour);
+            car = newCar(colour,speed);
             this.#cars[i] = car;
         }
     }
