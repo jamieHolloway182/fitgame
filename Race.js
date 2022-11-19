@@ -16,7 +16,7 @@ class Race{
     }
     addComputerCars(){
         for (i = 0; i < 2 ; i++){
-            const speed = Math.floor((Math.random()*90)+20);
+            const speed = Math.floor((Math.random()*20)+5);
             const colours = [];
             colours[0] = "red";
             colours[1] = "blue";
