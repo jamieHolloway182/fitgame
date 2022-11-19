@@ -50,4 +50,7 @@ class Car{
     increaseSpeed(){
         this.#speed += 5;
     }
+    increaseFuelLevel(){
+        this.#fuelLevel += 10;
+    }
 }
